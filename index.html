@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Web perso</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Site Web personnel</title>
 </head>
 <body>
-    <h1>bonjour</h1>
+
+    <!-- image fond principal -->
+    <div id="main-image">
+        <img src="./image/image1.jpg" alt="image de fond principal">
+    </div>
+        
+    <!-- le contenu -->
+    <div class="block-right">
+        <!-- photos de profil -->
+        <div class="profil">
+            <img src="./image/me.png" alt="photo de profil" >
+        </div>
+        <div class="block-left">
+            <!-- nom et travail -->
+            <div class="head">
+                <h1>Andrianirintsoa <br>Ernestine</h1>
+                <p>Dévéloppeur Web</p>
+            </div>
+            <!-- mon portfolio -->
+            <section class="section1">
+                <h2>Mon portfolio</h2>
+                <div class="portfolio">
+                    <img src="./image/Photo1.PNG" alt="Photo 1" width="200px" class="Photo1">
+                    <img src="./image/Photo2.PNG" alt="Photo 2" width="200px" class="Photo2">
+                </div>
+            </section>
+            <section class="section2">
+                <h2>À Propos</h2>
+                <p>Développeur web formé dans le cadre de formations professionnelles, passionné par la création de sites et d’applications web, 
+                je suis à la recherche d’un poste de Développeur Web au sein de [préciser le nom de l’entreprise]. Grâce à ces formations et à des projets pratiques, 
+                j’ai acquis des compétences en HTML, CSS, JavaScript, ainsi que dans l’utilisation de frameworks comme React et Node.js. Sérieux et motivé, 
+                je suis déterminé à mettre mes compétences au service de projets ambitieux et à continuer de me perfectionner.</p>
+            </section>
+            <!-- mes compétences -->
+            <section class="section3">
+                <h2>Mes compétences</h2>
+                
+                <div class="skill-container">
+                    <div class="skill bureautique">
+                        <div class="skill-name">Bureautique</div>
+                        <div class="skill-bar">
+                            <div class="skill-level">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill equipe">
+                        <div class="skill-name">Travail d' équipe</div>
+                        <div class="skill-bar">
+                            <div class="skill-level">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill adaptation">
+                        <div class="skill-name">Capacité d'adaptation</div>
+                        <div class="skill-bar">
+                            <div class="skill-level">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill stress">
+                        <div class="skill-name">Gestion de Stress</div>
+                        <div class="skill-bar">
+                            <div class="skill-level">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section4">
+                <h2>Contactez-moi</h2>
+                <div class="contact-container">
+                    <div class="mycoord">
+                        <div class="coord-elt">
+                            <img src="./image/location.png" alt="monlocalisation" height="30px" style="padding-top: 10px;">
+                            <p>Ankazobe By Pass, Tananarive</p>
+                        </div>
+                        <div class="coord-elt">
+                            <img src="./image/phone.png" alt="monNum" height="30px" style="padding-top: 10px;">
+                            <p><a class="tel" href="tel:+261324547835">+261324547835</a></p>
+                        </div>
+                        <div class="coord-elt">
+                            <img src="./image/e-mail.png" alt="monEmail" height="30px" style="padding-top: 10px;">
+                            <p><a class="e-mail" href="mailto:ernestineandrianirintsoa@gmail.com">ernestineandrianirintsoa@gmail.com</a></p>
+                        </div>
+                    </div>  
+                    <img src="./image/Tananarive.jpg" alt="Tananarive" class="tana">
+                </div>
+                
+                <p class="contactme">Contactez-moi. Envoyez-moi un message</p>   
+                <div class="input">
+                    <input type="text" name="Nom" placeholder="Nom">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="Sujet" placeholder="Sujet">
+                    <input type="text" name="message" placeholder="message">
+                    <button type="submit" class="send-button">Envoyer</button>
+                </div>
+            </section>
+            <footer class="footer">
+                <!-- liens sociaux -->
+                <div class="info">
+                    <a href="https://www.facebook.com/profile.php?id=100071977713155" target="_blank">
+                        <img src="./image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://wa.me/261324547835"target="_blank">
+                        <img src="./image/watshapp.png" alt="watshapp">
+                    </a>
+                    <a href="https://www.instagram.com/ernestineandrianirintsoa/"target="_blank">
+                        <img src="./image/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://github.com/nenes15/votreprofil" target="_blank">
+                        <img src="./image/github.png" alt="github">
+                    </a>
+                </div>
+            </footer>
+        </div>   
+    </div>
+    
 </body>
 </html>
