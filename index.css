@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1; /* Met l'image en arrière-plan */
+    object-fit: cover; /* Ajuste l'image pour couvrir tout l'écran */
 }
 #main-image img {
     width: 100%;
@@ -25,7 +26,8 @@ body {
 .head {
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 4vw;
 }
 .portfolio {
     display: flex;
@@ -60,7 +62,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 35vw;
+    width: 35%;
+   /* transform: translate(-50%); /* Pour s'assurer que l'image est bien centrée */
     background: rgba(255, 255, 255, 0.1); /* Transparence */
     backdrop-filter: blur(8px); /* Flou en arrière-plan */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -79,10 +82,6 @@ h2 {
     margin-top: 10%;
     margin-left: 36%;
 }
-
-
-
-
 
 /*les compétences*/
 .skill-container {
@@ -246,9 +245,19 @@ h2 {
 
 /* pour les smartphones */
 @media only screen and (max-width: 600px) {
+    #main-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
     .block-left, .block-right {
         display: block;
         margin: 0;
+    }
+    .head {
+        font-size: 6vw;  /* Ajuste dynamique pour le nom */
     }
     .block-left .section1 {
         margin-top: 10%;
@@ -259,8 +268,12 @@ h2 {
     }
     .block-right .profil img {
         position: relative;
-        width: 80%;
-        margin: 0 auto;
+        width: 70vw;
+        margin: 0 auto;       
+        top: 10%;
+        left: 50%; /* Centrer l'image horizontalement */
+        transform: translateX(-50%); /* Ajuste l'image pour être parfaitement centrée */
+        
     }
     .block-left {
         margin-left: 0;
@@ -293,6 +306,13 @@ h2 {
     .portfolio {
         flex-direction: column;
         gap: 20px;
+    }
+    .block-right .profil img {
+        position: relative;
+        top: 10%;
+        left: 50%; /* Centrer l'image horizontalement */
+        transform: translateX(-50%); /* Ajuste l'image pour être parfaitement centrée */
+        width: 80vw; /* Ajuste la taille de l'image sur les très petits écrans */
     }
 
     .block-left .section1 {
